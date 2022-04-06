@@ -10,15 +10,15 @@
     This plugin allows you switch the Flashlight / Torch of your device on or off.
   </description>
 
-  <author>Eddy Verbruggen - @EddyVerbruggen</author>
+  <author>Eddy Verbruggen - @EddyVerbruggen, derodero - @derodero24</author>
 
   <license>MIT</license>
 
   <keywords>Torch, Flashlight, Flash, Light</keywords>
 
-  <repo>https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin.git</repo>
+  <repo>https://github.com/derodero24/Cordova-Plugin-Flashlight</repo>
 
-  <issue>https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin/issues</issue>
+  <issue>https://github.com/derodero24/Cordova-Plugin-Flashlight/issues</issue>
 
   <engines>
     <engine name="cordova" version=">=3.0.0"/>
