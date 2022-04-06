@@ -22,6 +22,12 @@ This plugin allows you to switch the flashlight / torch of the device on and off
 ## 2. Installation
 
 ```
+$ cordova plugin add cordova-plugin-flashlight2
+```
+
+or
+
+```
 $ cordova plugin add https://github.com/derodero24/Cordova-Plugin-Flashlight2
 ```
 
