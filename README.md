@@ -1,5 +1,7 @@
 # Cordova Flashlight / Torch plugin
 
+<a href="https://www.npmjs.com/package/cordova-plugin-flashlight2"><img alt="npm" src="https://img.shields.io/npm/v/cordova-plugin-flashlight2"></a>
+
 1. [Description](https://github.com/derodero24/Cordova-Plugin-Flashlight2#1-description)
 2. [Installation](https://github.com/derodero24/Cordova-Plugin-Flashlight2#2-installation)
 3. [Usage](https://github.com/derodero24/Cordova-Plugin-Flashlight2#3-usage)
