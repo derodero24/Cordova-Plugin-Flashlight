@@ -19,6 +19,7 @@
     "Flashlight",
     "Flash",
     "Light",
+    "Cordova",
     "ecosystem:cordova",
     "cordova-ios",
     "cordova-android",
