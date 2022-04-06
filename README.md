@@ -25,16 +25,8 @@ This plugin allows you to switch the flashlight / torch of the device on and off
 
 ## 2. Installation
 
-Latest stable version from npm:
-
 ```
-$ cordova plugin add cordova-plugin-flashlight
-```
-
-Bleeding edge version from Github:
-
-```
-$ cordova plugin add https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin
+$ cordova plugin add https://github.com/derodero24/Cordova-Plugin-Flashlight
 ```
 
 ### PhoneGap Build
@@ -53,21 +45,25 @@ which needs to be anywhere between 0.0 and 1.0. **Only** on iOS this will affect
 brightness of the torch.
 
 ```javascript
-window.plugins.flashlight.available(function (isAvailable) {
-  if (isAvailable) {
-    // switch on
-    window.plugins.flashlight.switchOn(
-      function () {}, // optional success callback
-      function () {}, // optional error callback
-      { intensity: 0.3 } // optional as well
-    );
+const flashlightPlugin = window.plugins.flashlight;
 
-    // switch off after 3 seconds
-    setTimeout(function () {
-      window.plugins.flashlight.switchOff(); // success/error callbacks may be passed
-    }, 3000);
+flashlightPlugin.available().then(result => {
+  if (result) {
+    // If available, switch the light on.
+    flashlightPlugin
+      .switchOn({ intensity: 0.3 }) // optional as well
+      .then(() => {
+        // If successful, switch off after 3 seconds.
+        setTimeout(() => {
+          flashlightPlugin.switchOff();
+        }, 3000);
+      })
+      .catch(() => {
+        // If it fails, show alert.
+        alert('Cannot switch the light on.');
+      });
   } else {
-    alert('Flashlight not available on this device');
+    alert('Flashlight not available on this device.');
   }
 });
 ```
@@ -75,11 +71,12 @@ window.plugins.flashlight.available(function (isAvailable) {
 As an alternative to `switchOn` and `switchOff`, you can use the `toggle` function
 
 ```javascript
-window.plugins.flashlight.toggle(
-  function () {}, // optional success callback
-  function () {}, // optional error callback
-  { intensity: 0.3 } // optional as well, used on iOS when switching on
-);
+window.plugins.flashlight
+  .toggle(
+    { intensity: 0.3 } // optional as well, used on iOS when switching on
+  )
+  .then(() => {}) // optional success callback
+  .catch(() => {}); // optional error callback
 ```
 
 To know if the flashlight is on or off you can call `isSwitchedOn`
@@ -94,10 +91,8 @@ Otherwise, the camera may be locked so it can't be used by other apps:
 ```javascript
 document.addEventListener(
   'backbutton',
-  function () {
-    // pass exitApp as callbacks to the switchOff method
-    window.plugins.flashlight.switchOff(exitApp, exitApp);
-  },
+  // pass exitApp as callbacks to the switchOff method
+  () => window.plugins.flashlight.switchOff().then(exitApp).catch(exitApp),
   false
 );
 
