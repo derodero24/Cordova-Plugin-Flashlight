@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-flashlight"
-        version="3.2.0">
+  xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-flashlight" version="4.0.0">
 
   <name>Flashlight</name>
 
@@ -10,15 +8,15 @@
     This plugin allows you switch the Flashlight / Torch of your device on or off.
   </description>
 
-  <author>Eddy Verbruggen - @EddyVerbruggen, derodero - @derodero24</author>
+  <author>derodero24</author>
 
   <license>MIT</license>
 
   <keywords>Torch, Flashlight, Flash, Light</keywords>
 
-  <repo>https://github.com/derodero24/Cordova-Plugin-Flashlight</repo>
+  <repo>https://github.com/derodero24/Cordova-Plugin-Flashlight2</repo>
 
-  <issue>https://github.com/derodero24/Cordova-Plugin-Flashlight/issues</issue>
+  <issue>https://github.com/derodero24/Cordova-Plugin-Flashlight2/issues</issue>
 
   <engines>
     <engine name="cordova" version=">=3.0.0"/>

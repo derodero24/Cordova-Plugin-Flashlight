@@ -1,17 +1,13 @@
 # Cordova Flashlight / Torch plugin
 
-This is a fork of [EddyVerbruggen/Flashlight-PhoneGap-Plugin](https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin)
-
-============================================================
-
-by [Eddy Verbruggen](http://www.x-services.nl) for iOS, Android and WP8
-
-1. [Description](https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin#1-description)
-2. [Installation](https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin#2-installation) 2. [Automatically (CLI / Plugman)](https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin#automatically-cli--plugman) 2. [Manually](https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin#manually) 2. [PhoneGap Build](https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin#phonegap-build)
-3. [Usage](https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin#3-usage)
-4. [Credits](https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin#4-credits)
+1. [Description](https://github.com/derodero24/Cordova-Plugin-Flashlight2#1-description)
+2. [Installation](https://github.com/derodero24/Cordova-Plugin-Flashlight2#2-installation)
+3. [Usage](https://github.com/derodero24/Cordova-Plugin-Flashlight2#3-usage)
+4. [Credits](https://github.com/derodero24/Cordova-Plugin-Flashlight2#4-credits)
 
 ## 1. Description
+
+This is a fork of [EddyVerbruggen/Flashlight-PhoneGap-Plugin](https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin)
 
 This plugin allows you to switch the flashlight / torch of the device on and off.
 
@@ -26,7 +22,7 @@ This plugin allows you to switch the flashlight / torch of the device on and off
 ## 2. Installation
 
 ```
-$ cordova plugin add https://github.com/derodero24/Cordova-Plugin-Flashlight
+$ cordova plugin add https://github.com/derodero24/Cordova-Plugin-Flashlight2
 ```
 
 ### PhoneGap Build
@@ -35,7 +31,7 @@ Flashlight works with PhoneGap build too! Compatible with PhoneGap 3.0.0 and up.
 Just add the following xml to your `config.xml` to always use the latest version of this plugin:
 
 ```xml
-<gap:plugin name="cordova-plugin-flashlight" source="npm" />
+<gap:plugin name="cordova-plugin-flashlight2" source="npm" />
 ```
 
 ## 3. Usage
