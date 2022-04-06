@@ -24,16 +24,16 @@
     "cordova-android",
     "cordova-wp8"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.0.0"
-    }
-  ],
+  "engines": {
+    "cordova": ">=3.0.0"
+  },
   "author": "Eddy Verbruggen <eddyverbruggen@gmail.com> (https://github.com/EddyVerbruggen)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin/issues"
   },
-  "homepage": "https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin#readme"
+  "homepage": "https://github.com/EddyVerbruggen/Flashlight-PhoneGap-Plugin#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
 }
