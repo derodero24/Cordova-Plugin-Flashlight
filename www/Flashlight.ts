@@ -5,7 +5,7 @@ declare const cordova: {
     pluginName: string,
     actionName: string,
     options: any[]
-  ) => {};
+  ) => void;
   addConstructor: (installer: () => void) => void;
 };
 
